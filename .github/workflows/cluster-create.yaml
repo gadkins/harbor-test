@@ -49,7 +49,7 @@ jobs:
             context: .
             build-args: |
               harbor_base_image_version=dev
-              harbor_base_namespace=gadkins
+              harbor_base_namespace=goharbor
               npm_registry=https://registry.npmjs.org
 
   # Job to build-push harbor-portal image
@@ -84,7 +84,7 @@ jobs:
             context: .
             build-args: |
               harbor_base_image_version=dev
-              harbor_base_namespace=gadkins
+              harbor_base_namespace=goharbor
               npm_registry=https://registry.npmjs.org
         - name: Echo image
           run: echo ${{ steps.meta.outputs.images }}
@@ -124,7 +124,7 @@ jobs:
             context: .
             build-args: |
               harbor_base_image_version=dev
-              harbor_base_namespace=gadkins
+              harbor_base_namespace=goharbor
               npm_registry=https://registry.npmjs.org
 
     # Job to build-push harbor-registry image
@@ -162,7 +162,7 @@ jobs:
             context: .
             build-args: |
               harbor_base_image_version=dev
-              harbor_base_namespace=gadkins
+              harbor_base_namespace=goharbor
               npm_registry=https://registry.npmjs.org
 
     # Job to build-push harbor-registryctl image
@@ -203,7 +203,7 @@ jobs:
             context: .
             build-args: |
               harbor_base_image_version=dev
-              harbor_base_namespace=gadkins
+              harbor_base_namespace=goharbor
               npm_registry=https://registry.npmjs.org
 
     uffizzi-cluster:
